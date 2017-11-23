@@ -1,0 +1,6 @@
+framework module Pods_Indonesia {
+  umbrella header "Pods-Indonesia-umbrella.h"
+
+  export *
+  module * { export * }
+}
