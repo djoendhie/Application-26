@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,33 +24,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="ezC-JJ-ZB5">
-                                <rect key="frame" x="0.0" y="72" width="375" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="08d-sH-fVt">
+                                <rect key="frame" x="127" y="487" width="121" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Dmg-6D-bfN"/>
+                                    <constraint firstAttribute="height" constant="105" id="OfV-VY-w70"/>
+                                    <constraint firstAttribute="width" secondItem="08d-sH-fVt" secondAttribute="height" multiplier="121:105" id="Rca-Ie-eQJ"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="08d-sH-fVt">
-                                <rect key="frame" x="127" y="470" width="121" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="ezC-JJ-ZB5">
+                                <rect key="frame" x="0.0" y="85" width="375" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ezC-JJ-ZB5" secondAttribute="height" multiplier="75:44" id="a2g-Mk-dG6"/>
+                                    <constraint firstAttribute="height" constant="220" id="oC6-IB-el1"/>
+                                    <constraint firstAttribute="width" constant="375" id="om0-hI-gGj"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resep Masakan Khas Indonesia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS3-hg-Yhw">
-                                <rect key="frame" x="16" y="293" width="343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resep Masakan Khas Indonesia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS3-hg-Yhw">
+                                <rect key="frame" x="16" y="313" width="343" height="25"/>
                                 <fontDescription key="fontDescription" name="Baskerville-BoldItalic" family="Baskerville" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99169057607650757" green="0.77991443872451782" blue="0.46894288063049316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="08d-sH-fVt" firstAttribute="top" secondItem="RS3-hg-Yhw" secondAttribute="bottom" constant="149" id="BzT-fs-6pa"/>
+                            <constraint firstItem="ezC-JJ-ZB5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jd9-QM-CNc"/>
+                            <constraint firstItem="ezC-JJ-ZB5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="KIv-3z-SeE"/>
+                            <constraint firstItem="08d-sH-fVt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="L5n-4w-XE5"/>
+                            <constraint firstItem="RS3-hg-Yhw" firstAttribute="centerX" secondItem="ezC-JJ-ZB5" secondAttribute="centerX" id="P5t-ft-GP9"/>
+                            <constraint firstItem="RS3-hg-Yhw" firstAttribute="top" secondItem="ezC-JJ-ZB5" secondAttribute="bottom" constant="8" id="VZc-aF-rgj"/>
+                            <constraint firstItem="ezC-JJ-ZB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="khF-83-6FI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="08d-sH-fVt" secondAttribute="bottom" constant="75" id="m2e-TU-fng"/>
+                            <constraint firstItem="RS3-hg-Yhw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="uxF-jO-20M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="08d-sH-fVt" secondAttribute="trailing" constant="127" id="x1s-FP-jtY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="225" height="225"/>
         <image name="images" width="341" height="148"/>
-        <image name="images-1" width="225" height="225"/>
     </resources>
 </document>

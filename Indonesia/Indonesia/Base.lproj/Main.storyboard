@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Resep Table View Controller-->
+        <!--List Makanan-->
         <scene sceneID="0xK-YO-32g">
             <objects>
                 <tableViewController id="etZ-Ln-T1o" customClass="ResepTableViewController" customModule="Indonesia" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +105,7 @@
                             <outlet property="delegate" destination="etZ-Ln-T1o" id="NRM-Zf-TXa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="RJp-1u-IjI"/>
+                    <navigationItem key="navigationItem" title="List Makanan" id="RJp-1u-IjI"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="modal" identifier="passIsi" id="dH7-Bv-5QW"/>
                     </connections>
@@ -126,7 +126,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="cXX-2o-mtP">
+                                    <navigationItem title="Resep" id="cXX-2o-mtP">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="Loc-h2-CTo">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rtc-QC-4Z5">
                                                 <rect key="frame" x="16" y="7" width="34" height="30"/>
